@@ -1,0 +1,80 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Devanny ❤️ Baptiste</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div id="questionPage" class="page active">
+  <h1>Devanny Natalia 💘 Baptiste LIOI</h1>
+  <h2>Do you want to be my Valentine? 💌</h2>
+
+  <div class="button-container">
+    <button id="yesBtn">YES 💖</button>
+    <button id="noBtn">NO 💔</button>
+  </div>
+
+  <p id="tryAgain"></p>
+</div>
+
+<div id="lovePage" class="page">
+  <canvas id="confetti"></canvas>
+
+  <div class="slider">
+    <button class="arrow" onclick="prevSlide()">❮</button>
+
+    <div class="slides">
+
+      <div class="slide active">
+        <img src="image1.jpg">
+        <p>Even miles apart, my heart beats only for you 💕</p>
+      </div>
+
+      <div class="slide">
+        <img src="image2.jpg">
+        <p>Je pense à toi chaque seconde, mon amour ❤️</p>
+      </div>
+
+      <div class="slide">
+        <img src="image3.jpg">
+        <p>Distance means nothing when someone means everything 💌</p>
+      </div>
+
+      <div class="slide">
+        <img src="image4.jpg">
+        <p>Mon cœur t’appartient pour toujours 💞</p>
+      </div>
+
+      <div class="slide">
+        <img src="image5.jpg">
+        <p>One day no more screens… just us 🌍</p>
+      </div>
+
+      <div class="slide">
+        <img src="image6.jpg">
+        <p>Tu es mon destin, my forever 💖</p>
+      </div>
+
+      <div class="slide">
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <p>I will wait for you… parce que je t’aime infiniment 💕</p>
+      </div>
+
+    </div>
+
+    <button class="arrow" onclick="nextSlide()">❯</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
