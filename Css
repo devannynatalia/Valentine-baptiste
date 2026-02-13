@@ -1,0 +1,62 @@
+style.css
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  overflow-x: hidden;
+}
+
+.page { display: none; padding: 40px; }
+.page.active { display: block; }
+
+button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #444;
+  color: white;
+  position: absolute;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  max-width: 350px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img, video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.arrow {
+  font-size: 30px;
+  background: none;
+}
+
+#tryAgain {
+  color: red;
+  font-weight: bold;
+}
